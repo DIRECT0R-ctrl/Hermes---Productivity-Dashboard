@@ -2,6 +2,10 @@ import React from 'react'
 
 const Todo = ({todo, todos, setTodos,id}) => {
 
+    const onDelete = () => {
+        setTodos(todos.filter((item) => 
+        todo.id !== item.id))
+    }
     const onchangedit = () => {}
   return (
     <div className='todo-li'>
@@ -15,7 +19,7 @@ const Todo = ({todo, todos, setTodos,id}) => {
                 <span className='text-edit'>Edit</span><i className='fa fa-edit'></i>
             </button>
 
-            <button className='button-delete'>
+            <button className='button-delete' onClick={onDelete}>
                 <span className='text-delete'>Delete</span><i className='fa fa-trash'></i>
             </button>
         </li>

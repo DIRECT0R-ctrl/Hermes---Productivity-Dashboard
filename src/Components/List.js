@@ -1,7 +1,7 @@
 import React from 'react'
 import Todo from './Todo'
 
-const list = ({todos, setTodos}) => {
+const List = ({todos, setTodos}) => {
   return (
     <div className='todo-ul'>
         <ul>
@@ -19,4 +19,4 @@ const list = ({todos, setTodos}) => {
   )
 }
 
-export default list
+export default List;

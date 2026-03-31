@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Form from './Components/Form';
-import list from './Components/list';
+import List from './Components/List';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -13,7 +13,7 @@ function App() {
         <div className="form-container">
           <Form todos={todos} setTodos={setTodos} />
         </div>
-        <div><list todos={todos} setTodos={setTodos}/></div>
+        <div><List todos={todos} setTodos={setTodos}/></div>
       </div>
     </div>
   );
